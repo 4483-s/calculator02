@@ -1,0 +1,58 @@
+@import url("./reset.css");
+:root.dark {
+  --background-color: #101828;
+  --func-btns: red;
+}
+:root.light {
+  --background-color: white;
+  --func-btns: black;
+}
+body {
+  /* background-color: #101828; */
+  background-color: var(--background-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+
+  height: 2rem;
+  background-color: green;
+}
+.container {
+  display: grid;
+  grid-template: 1.3fr repeat(5, 1fr) / repeat(4, 1fr);
+  background-color: #1b1b1b;
+  flex: 0 1 500px;
+  height: min(100%, 700px);
+  padding: 2em;
+  gap: 0.3rem;
+  border-radius: 13px;
+}
+.container * {
+  font-size: clamp(1px, 400%, 60rem);
+}
+.display {
+  grid-column: 1 / span 4;
+  background-color: red;
+}
+.btns.clear {
+  grid-column-start: span 2;
+  background-color: aqua;
+}
+.btns.zero {
+  grid-column-start: span 2;
+  background-color: aqua;
+}
+.btns {
+  background-color: yellow;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
