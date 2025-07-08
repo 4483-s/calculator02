@@ -1,5 +1,4 @@
 const display = document.querySelector(".display");
-
 function append(x) {
   display.textContent += x;
 }
