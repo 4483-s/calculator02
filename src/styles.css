@@ -40,6 +40,9 @@ body {
 .display {
   grid-column: 1 / span 4;
   background-color: red;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 .btns.clear {
   grid-column-start: span 2;
