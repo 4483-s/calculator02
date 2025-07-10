@@ -1,4 +1,5 @@
 @import url("./reset.css");
+
 :root.dark {
   --background-color: #101828;
   --func-btns: red;

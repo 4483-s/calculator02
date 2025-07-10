@@ -5,7 +5,6 @@ function append(x) {
 function calcAndDisplay(x) {
   display.textContent = x;
 }
-function clearAll() {
-  display.textContent = "0";
-}
-export default { append, calcAndDisplay, clearAll };
+function lightSwitch() {}
+
+export default { append, calcAndDisplay, lightSwitch };
