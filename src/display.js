@@ -1,10 +1,12 @@
-const display = document.querySelector(".display");
+const displaySqure = document.querySelector(".display");
 function append(x) {
-  display.textContent += x;
+  displaySqure.textContent += x;
 }
-function calcAndDisplay(x) {
-  display.textContent = x;
+function display(x) {
+  displaySqure.textContent = x;
 }
-function lightSwitch() {}
+function lightSwitch() {
+  console.log("hi");
+}
 
-export default { append, calcAndDisplay, lightSwitch };
+export default { append, display, lightSwitch };
